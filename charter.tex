@@ -1,13 +1,13 @@
 \documentclass[
 11pt, % The default document font size, options: 10pt, 11pt, 12pt
-codirector, % Uncomment to add a codirector to the title page
+%codirector, % Uncomment to add a codirector to the title page
 ]{charter} 
 
 
 
 
 % El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
-\titulo{Título del proyecto} 
+\titulo{Sistema de Iluminación y  Riego por Goteo} 
 
 % Nombre del posgrado, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \degreename
 \posgrado{Carrera de Especialización en Sistemas Embebidos} 
@@ -17,18 +17,18 @@ codirector, % Uncomment to add a codirector to the title page
 %\posgrado{Maestría en Internet de las cosas}
 
 % Tu nombre, se puede usar el cualquier lugar del documento con el comando \authorname
-\autor{Nombre del Autor} 
+\autor{Ing. Escribá Pedro Santiago} 
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
-\director{Nombre del Director}
-\pertenenciaDirector{pertenencia} 
+\director{Ing. Esp. Brignone Matias Nicolás}
+\pertenenciaDirector{Encora} 
 % FIXME:NO IMPLEMENTADO EL CODIRECTOR ni su pertenencia
 \codirector{John Doe} % para que aparezca en la portada se debe descomentar la opción codirector en el documentclass
 \pertenenciaCoDirector{FIUBA}
 
 % Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
-\cliente{Nombre del cliente}
-\empresaCliente{Empresa del cliente}
+\cliente{Ing. Rodrigo Fernandez Frittelli}
+\empresaCliente{RiegoTec}
 
 % Nombre y pertenencia de los jurados, se pueden usar el cualquier lugar del documento con el comando \jurunoname, \jurdosname y \jurtresname y \perteunoname, \pertedosname y \pertetresname.
 \juradoUno{Nombre y Apellido (1)}
@@ -38,8 +38,8 @@ codirector, % Uncomment to add a codirector to the title page
 \juradoTres{Nombre y Apellido (3)}
 \pertenenciaJurTres{pertenencia (3)}
  
-\fechaINICIO{30 de abril de 2021}		%Fecha de inicio de la cursada de GdP \fechaInicioName
-\fechaFINALPlan{18 de junio de 2021} 	%Fecha de final de cursada de GdP
+\fechaINICIO{20 de octubre de 2022}		%Fecha de inicio de la cursada de GdP \fechaInicioName
+\fechaFINALPlan{8 de diciembre de 2022} 	%Fecha de final de cursada de GdP
 \fechaFINALTrabajo{15 de mayo de 2022}	%Fecha de defensa pública del trabajo final
 
 
@@ -115,27 +115,13 @@ Se adjunta a esta acta la planificación inicial.
 \section{1. Descripción técnica-conceptual del proyecto a realizar}
 \label{sec:descripcion}
 
+Con el objetivo de aprender nuevas tecnologías y aplicar y arraigar los conocimientos adquiridos en la especialidad de Sistemas Embebidos de la UBA es que se propone el presente proyecto. Este busca implementar nuevas tecnologías a los sistemas de riegos actuales con el propósito de garantizar un cultivo de excelencia, donde el grado de impacto negativo de las variables climáticas sean lo menor posible. En complemento, se propone también suministrar un sistema de iluminación moderno y vistoso. 
 
-\begin{consigna}{red} % El bloque "consigna" se usa para poner texto en rojo y dar una pequeña ayuda sobre cómo completar la sección
+De esta manera, surgen una gran variedad de soluciones tecnológicas siendo imperioso seleccionar la que mejor se adapte a satisfacer esta necesidad. Por ello es que se propone utilizar uno o más sensores de humedad por cada cultivo y, mediante un lazo de control cerrado, suministrar el agua que sea requerida. La información para cada especie de planta se encontrará en un servidor virtual y mismo enviará la información al sistema embebido por WI-FI.
 
-El objetivo es que el lector en una o dos páginas entienda de qué se trata el proyecto y cuáles son sus desafíos, su motivación y su importancia.
+A diferencia de otros sistemas de riego, el presente incorpora nuevas tecnologías de comunicación y una interfaz de usuario. Es así que cualquier persona con un SmarthPhone podrá configurar el cultivo asociado a un sensor y obtener estadísticas de la humedad de la tierra. También controlará un arreglo de LEDs RGB situado cercano a un sensor o plantín.
 
-Se debe destacar claramente cuál es el valor que agrega el proyecto a realizar. ``El presente proyecto se destaca especialmente por incorporar tal cosa... Esto lo diferencia de otros sistemas similares en que ...''
-
-Puede ser útil incluir en esta sección la respuesta a alguna de estas preguntas:
-
-\begin{itemize}
-	\item ¿Cómo se vincula este proyecto con la misión de la organización?
-	\item ¿Cómo se inserta este proyecto en el modelo de negocio de la organización?
-	\item ¿Ayuda a la explicación si se incluye un lienzo Canvas del Modelo de Negocio?
-	\item ¿En qué estado del ciclo de vida está el producto que se desea reemplazar o mejorar?
-	\item ¿Cuáles son las necesidades que debe satisfacer?
-	\item ¿Por dónde pasa la innovación?
-\end{itemize}
-
-La descripción técnica-conceptual \textbf{debe incluir al menos un diagrama en bloques del sistema} y una frase como la siguiente: ``En la Figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. Se observa que...''. Luego recién más abajo de haber puesto esta frase, se pone la figura. La regla es que las figuras nunca pueden ir antes de ser mencionadas en el texto, porque sino el lector no entiende por qué de pronto aparece una figura.
-
-%\vspace{25px}
+En la Figura \ref{fig:diagBloques} se puede observar las diferentes bloques del proyecto, seccionado de acuerdo a las tecnologías a utilizar y segmentado de acuerdo al alcance del usuario. La interfaz de usuario abarca el high level tecnológico y mas cercano a la persona, mientras que el sistema embebido representa el low level tecnológico y mas lejano a la persona.
 
 \begin{figure}[htpb]
 \centering 
@@ -144,28 +130,11 @@ La descripción técnica-conceptual \textbf{debe incluir al menos un diagrama en
 \label{fig:diagBloques}
 \end{figure}
 
-\vspace{25px}
-
-El tamaño de la tipografía en TODAS las figuras debe ser adecuado para que NO pase lo que ocurre acá, donde el lector debe esforzarse para poder leer el texto. Los colores usados en el diagrama deben ser adecuados, tal que ayuden a comprender mejor el diagrama, preferentemente en la gama de colores pastel.
-\end{consigna}
-
 
 \section{2. Identificación y análisis de los interesados}
 \label{sec:interesados}
 
-\begin{consigna}{red} 
-Nota: (borrar esto y todas las consignas en color rojo antes de entregar este documento).
- 
-Es inusual que una misma persona esté en más de un rol, incluso en proyectos chicos.
- 
-Si se considera que una persona cumple dos o más roles, entonces sólo dejarla en el rol más importante. Por ejemplo:
-
-\begin{itemize}
-\item Si una persona es Cliente pero también colabora u orienta, dejarla solo como Cliente.
-\item Si una persona es el Responsable, no debe ser colocado también como Miembro del equipo.
-\end{itemize}
-
-Pero en cambio sí es usual que el Cliente y el Auspiciante sean el mismo, por ejemplo.
+En esta sección se estudian los interesados en el proyecto. En la Tabla \ref{tab:interesados} se puede apreciar los distintos roles, organización y puesto de las personas que poseen un cierto interés en el producto a desarrollar.
 
 \begin{table}[ht]
 %\caption{Identificación de los interesados}
@@ -174,75 +143,49 @@ Pero en cambio sí es usual que el Cliente y el Auspiciante sean el mismo, por e
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Rol           & Nombre y Apellido & Organización 	& Puesto 	\\ \hline
-Auspiciante   &                   &              	&        	\\ \hline
-Cliente       & \clientename      &\empclientename	&        	\\ \hline
-Impulsor      &                   &              	&        	\\ \hline
+Auspiciante   & \clientename      &\empclientename 	& -        	\\ \hline
+Cliente       & \clientename      &\empclientename	& -      	\\ \hline
 Responsable   & \authorname       & FIUBA        	& Alumno 	\\ \hline
-Colaboradores &                   &              	&        	\\ \hline
 Orientador    & \supname	      & \pertesupname 	& Director Trabajo final \\ \hline
-Equipo        & miembro1 \newline 
-				miembro2          &              	&        	\\ \hline
-Opositores    &                   &              	&        	\\ \hline
-Usuario final &                   &              	&        	\\ \hline
+Usuario final & Ana Fernandez     &Particular    	& -       	\\ \hline
 \end{tabularx}
+\caption{Tabla de interesados}
+\label{tab:interesados}
 \end{table}
 
-El Director suele ser uno de los Orientadores.
-
-No dejar celdas vacías; si no hay nada que poner en una celda colocar un signo ``-''.
-
-No dejar filas vacías; si no hay nada que poner en una fila entonces eliminarla.
-
-Es deseable listar a continuación las principales características de cada interesado.
- 
-Por ejemplo:
 \begin{itemize}
-	\item Auspiciante: es riguroso y exigente con la rendición de gastos. Tener mucho cuidado con esto.
-	\item Equipo: Juan Perez, suele pedir licencia porque tiene un familiar con una enfermedad. Planificar considerando esto.
-	\item Orientador: María Gómez va a poder ayudar mucho con la definición de los requerimientos.
+	\item Auspiciante y Cliente: es riguroso y exigente. Desea un producto final en condiciones optimas y sin fallas.
+	\item Orientador: Matías es un profesional de excelencia, capaz de asistir en las necesidades que surjan.
 \end{itemize}
-
-\end{consigna}
 
 
 
 \section{3. Propósito del proyecto}
 \label{sec:proposito}
 
-\begin{consigna}{red}
-¿Por qué se hace el proyecto? ¿Qué se quiere lograr? 
+El propósito de este proyecto es diseñar un prototipo funcional capaz de administrar agua mediante la tecnología de goteo a un cultivo determinado, satisfaciendo las necesidades del cliente involucrado. A su vez se pretende aplicar los conocimientos adquiridos en la carrera de especialización de Sistemas Embebidos permitiendo que los mismos sean afianzados.
 
-Se recomienda que sea solo un párrafo que empiece diciendo ``El propósito de este proyecto es...''.
-\end{consigna}
 
 \section{4. Alcance del proyecto}
 \label{sec:alcance}
 
-\begin{consigna}{red}
-¿Qué se incluye y que no se incluye en este proyecto?
+Acorde a las necesidades del cliente, el proyecto incluye el desarrollo de un firmware en lenguaje C encargado del control a lazo cerrado del sistema de riego y su comunicación con un servidor. También es parte de este proyecto el desarrollo mecánico de un prototipo funcional de riego por goteo que responda a las necesidades de un único cultivo. Ademas se incluye el código para el control del sistema de iluminación y su desarrollo físico y, por ultimo, una demo de una interfaz de usuario para utilizar en smartphones.
 
-Se refiere al trabajo a hacer para entregar el producto o resultado especificado. 
-
-Explicitar todo lo quede comprendido dentro del alcance del proyecto.
-
-Explicitar además todo lo que no quede incluido (``El presente proyecto no incluye...'')
-
-\end{consigna}
+En cambio, no es parte de este proyecto el desarrollo del código de la interfaz de usuario y brindar soporte a la misma. Tampoco se incluye el desarrollo de un PBC para alojar los diferentes componentes ni el desarrollo del hardware necesario.
 
 
 \section{5. Supuestos del proyecto}
 \label{sec:supuestos}
 
-\begin{consigna}{red}
-``Para el desarrollo del presente proyecto se supone que: ...''
+Para el desarrollo del presente proyecto se supone que:
 
 \begin{itemize}
-	\item Supuesto 1
-	\item Supuesto 2...
+	\item Se conocen todos los conceptos técnicos necesarios para su desarrollo. 
+	\item Se dispone de los recursos económicos como materiales.
+	\item Se dispone de un tiempo acotado a las necesidades del cliente y se debe ejecutar en dos meses.
+	\item El director del proyecto tendrá su participación, brindando ideas y corrigiendo errores.
+	\item El impacto de las condiciones macroeconomicas y reglamentarias será mínimo.
 \end{itemize}
-
-Por ejemplo, se podrían incluir supuestos respecto a disponibilidad de tiempo y recursos humanos y materiales, sobre la factibilidad técnica de distintos aspectos del proyecto, sobre otras cuestiones que sean necesarias para el éxito del proyecto como condiciones macroeconómicas o reglamentarias.
-\end{consigna}
 
 \section{6. Requerimientos}
 \label{sec:requerimientos}
