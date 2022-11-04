@@ -40,7 +40,7 @@
  
 \fechaINICIO{20 de octubre de 2022}		%Fecha de inicio de la cursada de GdP \fechaInicioName
 \fechaFINALPlan{8 de diciembre de 2022} 	%Fecha de final de cursada de GdP
-\fechaFINALTrabajo{15 de mayo de 2022}	%Fecha de defensa pública del trabajo final
+\fechaFINALTrabajo{15 de Agosto de 2022}	%Fecha de defensa pública del trabajo final
 
 
 \begin{document}
@@ -69,7 +69,7 @@
 \rowcolor[HTML]{C0C0C0} 
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
 0      & Creación del documento                                 &\fechaInicioName \\ \hline
-%1      & Se completa hasta el punto 4 inclusive                 & dd/mm/aaaa \\ \hline
+1      & Se completa hasta el punto 5 inclusive                 & 03/11/2022 \\ \hline
 %2      & Se completa hasta el punto 7 inclusive
 %		  Se puede agregar algo más \newline
 %		  En distintas líneas \newline
@@ -92,7 +92,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en \textcolor{red}{la implementación de un prototipo de un sistema de control de temperatura de un calefón}, y tendrá un presupuesto preliminar estimado de \textcolor{red}{600} hs de trabajo y \textcolor{red}{\$XXX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en la implementación de un prototipo de un sistema de riego por goteo, y tendrá un presupuesto preliminar estimado de 120 hs de trabajo y ARS 10000, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -121,11 +121,11 @@ De esta manera, surgen una gran variedad de soluciones tecnológicas siendo impe
 
 A diferencia de otros sistemas de riego, el presente incorpora nuevas tecnologías de comunicación y una interfaz de usuario. Es así que cualquier persona con un SmarthPhone podrá configurar el cultivo asociado a un sensor y obtener estadísticas de la humedad de la tierra. También controlará un arreglo de LEDs RGB situado cercano a un sensor o plantín.
 
-En la Figura \ref{fig:diagBloques} se puede observar las diferentes bloques del proyecto, seccionado de acuerdo a las tecnologías a utilizar y segmentado de acuerdo al alcance del usuario. La interfaz de usuario abarca el high level tecnológico y mas cercano a la persona, mientras que el sistema embebido representa el low level tecnológico y mas lejano a la persona.
+En la Figura \ref{fig:diagBloques} se puede observar los diferentes bloques del proyecto, seccionado de acuerdo a las tecnologías a utilizar. La interfaz de usuario abarca el high level tecnológico y más cercano a la persona, mientras que el sistema embebido representa el low level tecnológico y más lejano a la persona.
 
 \begin{figure}[htpb]
 \centering 
-\includegraphics[width=.5\textwidth]{./Figuras/diagBloques.png}
+\includegraphics[width=1\textwidth]{./Figuras/digBloq.png}
 \caption{Diagrama en bloques del sistema}
 \label{fig:diagBloques}
 \end{figure}
@@ -149,13 +149,14 @@ Responsable   & \authorname       & FIUBA        	& Alumno 	\\ \hline
 Orientador    & \supname	      & \pertesupname 	& Director Trabajo final \\ \hline
 Usuario final & Ana Fernandez     &Particular    	& -       	\\ \hline
 \end{tabularx}
-\caption{Tabla de interesados}
+\caption{Interesados}
 \label{tab:interesados}
 \end{table}
 
 \begin{itemize}
-	\item Auspiciante y Cliente: es riguroso y exigente. Desea un producto final en condiciones optimas y sin fallas.
+	\item Auspiciante y Cliente: es riguroso y exigente. Desea un producto final en condiciones óptimas y sin fallas.
 	\item Orientador: Matías es un profesional de excelencia, capaz de asistir en las necesidades que surjan.
+	\item Usuario final: profesional de herbología.
 \end{itemize}
 
 
@@ -163,13 +164,13 @@ Usuario final & Ana Fernandez     &Particular    	& -       	\\ \hline
 \section{3. Propósito del proyecto}
 \label{sec:proposito}
 
-El propósito de este proyecto es diseñar un prototipo funcional capaz de administrar agua mediante la tecnología de goteo a un cultivo determinado, satisfaciendo las necesidades del cliente involucrado. A su vez se pretende aplicar los conocimientos adquiridos en la carrera de especialización de Sistemas Embebidos permitiendo que los mismos sean afianzados.
+El propósito de este proyecto es diseñar un prototipo funcional capaz de administrar agua mediante la tecnología de goteo a un cultivo determinado, satisfaciendo las necesidades del cliente involucrado. A su vez, se pretende aplicar los conocimientos adquiridos en la carrera de especialización de Sistemas Embebidos permitiendo que los mismos sean afianzados.
 
 
 \section{4. Alcance del proyecto}
 \label{sec:alcance}
 
-Acorde a las necesidades del cliente, el proyecto incluye el desarrollo de un firmware en lenguaje C encargado del control a lazo cerrado del sistema de riego y su comunicación con un servidor. También es parte de este proyecto el desarrollo mecánico de un prototipo funcional de riego por goteo que responda a las necesidades de un único cultivo. Ademas se incluye el código para el control del sistema de iluminación y su desarrollo físico y, por ultimo, una demo de una interfaz de usuario para utilizar en smartphones.
+Acorde a las necesidades del cliente, el proyecto incluye el desarrollo de un firmware en lenguaje C encargado del control a lazo cerrado del sistema de riego y su comunicación con un servidor. También es parte de este proyecto el desarrollo mecánico de un prototipo funcional de riego por goteo que responda a las necesidades de un único cultivo. Además se incluye el código para el control del sistema de iluminación y su desarrollo físico y, por último, una demo de una interfaz de usuario para utilizar en SmartPhones.
 
 En cambio, no es parte de este proyecto el desarrollo del código de la interfaz de usuario y brindar soporte a la misma. Tampoco se incluye el desarrollo de un PBC para alojar los diferentes componentes ni el desarrollo del hardware necesario.
 
@@ -184,52 +185,73 @@ Para el desarrollo del presente proyecto se supone que:
 	\item Se dispone de los recursos económicos como materiales.
 	\item Se dispone de un tiempo acotado a las necesidades del cliente y se debe ejecutar en dos meses.
 	\item El director del proyecto tendrá su participación, brindando ideas y corrigiendo errores.
-	\item El impacto de las condiciones macroeconomicas y reglamentarias será mínimo.
+	\item El impacto de las condiciones macroeconómicas y reglamentarias será mínimo.
 \end{itemize}
 
 \section{6. Requerimientos}
 \label{sec:requerimientos}
 
-\begin{consigna}{red}
-Los requerimientos deben numerarse y de ser posible estar agruparlos por afinidad, por ejemplo:
-
+En la siguiente sección se enumeran los requerimientos del proyecto propuesto.
 \begin{enumerate}
-	\item Requerimientos funcionales
+	\item Requerimientos funcionales de firmware:
 		\begin{enumerate}
-			\item El sistema debe...
-			\item Tal componente debe...
-			\item El usuario debe poder...
+			\item Debe estar codificado en lenguaje C.
+			\item Debe incluir un sistema operativo de tiempo real.
+			\item Debe ser portable y escalable.
+			\item Debe respetar los estándares de codificación para lograr un código prolijo, legible y entendible.
+			\item Debe aplicar los conocimientos adquiridos a lo largo de la cursada de la especialidad en Sistemas Embebidos.
+		\end{enumerate}
+	\item Requerimientos funcionales de hardware:
+		\begin{enumerate}
+			\item Deben utilizarse el módulo ESP32 de Espressif como controlador general.
+			\item Deben utilizarse las placas de evaluación sin la necesidad de realizar un PCB.
+			\item Los sensores de humedad deben ser del modelo HD38 de alta calidad y bajo costo.
+			\item Se debe garantizar la tensión y corriente necesaria para alimentar el sistema de iluminación y el mecanismo de goteo.
+			\item Toda la electrónica sin uso directo (es decir aquello que no sean sensores, luces o cableado) debe estar bajo una protección mínima de la humedad.
+			\item Debe aplicar los conocimientos adquiridos a lo largo de la cursada de la especialidad en Sistemas Embebidos.
+		\end{enumerate}
+	\item Requerimientos funcionales de la User Interface:
+		\begin{enumerate}
+			\item Deben ser simple y fácil de entender y utilizar.
 		\end{enumerate}
 	\item Requerimientos de documentación
 		\begin{enumerate}
-			\item Requerimiento 1
-			\item Requerimiento 2 (prioridad menor)
+			\item La documentación debe presentarse en formato PDF usando lenguaje Latex.
+			\item Debe poder explicar el funcionamiento del producto y ser suficiente para que el usuario pueda utilizarlo.
 		\end{enumerate}
-	\item Requerimiento de testing...
-	\item Requerimientos de la interfaz...
-	\item Requerimientos interoperabilidad...
-	\item etc...
 \end{enumerate}
-
-Leyendo los requerimientos se debe poder interpretar cómo será el proyecto y su funcionalidad.
-
-Indicar claramente cuál es la prioridad entre los distintos requerimientos y si hay requerimientos opcionales. 
-
-No olvidarse de que los requerimientos incluyen a las regulaciones y normas vigentes!!!
-
-Y al escribirlos seguir las siguientes reglas:
-\begin{itemize}
-	\item Ser breve y conciso (nadie lee cosas largas). 
-	\item Ser específico: no dejar lugar a confusiones.
-	\item Expresar los requerimientos en términos que sean cuantificables y medibles.
-\end{itemize}
-
-\end{consigna}
 
 \section{7. Historias de usuarios (\textit{Product backlog})}
 \label{sec:backlog}
 
+A continuación se adjuntan algunas Historias de usuarios. Para valorarlas se propone un sistema de puntos ponderados teniendo en cuenta la dificultad, la complejidad y la incertidumbre (o riesgo involucrado) del requerimiento planteado en la historia. Cada uno de estos tópicos tendrán un peso del cual dependerá el puntaje asignado y respetando el siguiente esquema:
+\begin{itemize}
+	\item Dificultad:
+	\begin{itemize}
+		\item Bajo: 1 punto.
+		\item Medio: 5 puntos.
+		\item Alto: 9 puntos.
+	\end{itemize}
+	\item Complejidad:
+	\begin{itemize}
+		\item Bajo: 3 puntos.
+		\item Medio: 9 puntos.
+		\item Alto: 12 puntos.
+	\end{itemize}
+	\item Incertidumbre:
+	\begin{itemize}
+		\item Bajo: 1 punto.
+		\item Medio: 3 puntos.
+		\item Alto: 5 puntos.
+	\end{itemize}
+\end{itemize}
+De esta forma, para comprar entre historias se calculará el puntaje estimado de acuerdo a la serie de Fibonacci, aproximando al valor más cercano.
+\begin{enumerate}
+	\item Historia uno:
+\end{enumerate}
+
 \begin{consigna}{red}
+entre 5 y 8 historias.
 Descripción: En esta sección se deben incluir las historias de usuarios y su ponderación (\textit{history points}). Recordar que las historias de usuarios son descripciones cortas y simples de una característica contada desde la perspectiva de la persona que desea la nueva capacidad, generalmente un usuario o cliente del sistema. La ponderación es un número entero que representa el tamaño de la historia comparada con otras historias de similar tipo.
 
 El formato propuesto es: "como [rol] quiero [tal cosa] para [tal otra cosa]."
@@ -240,6 +262,16 @@ Se debe indicar explícitamente el criterio para calcular los \textit{story poin
 \section{8. Entregables principales del proyecto}
 \label{sec:entregables}
 
+Aquí se enumeran los entregables que dispondrá este proyecto.
+\begin{itemize}
+	\item Manual de usuario.
+	\item Guía de instalación.
+	\item Diagrama de circuitos esquemáticos.
+	\item Hoja de datos de los dispositivos involucrados.
+	\item Código fuente del firmware.
+	\item Informe final.
+
+\end{itemize}
 \begin{consigna}{red}
 
 Los entregables del proyecto son (ejemplo):
@@ -258,6 +290,32 @@ Los entregables del proyecto son (ejemplo):
 \section{9. Desglose del trabajo en tareas}
 \label{sec:wbs}
 
+De acuerdo a los requerimientos planteados en la sección \ref{sec:requerimientos} es que se proyecta el siguiente desglose de tareas.
+\begin{enumerate}
+\item Firmware.
+	\begin{enumerate}
+	\item Planeamiento de la maquina de estados (5 hs).
+	\item Desarrollo del código fuente (25 hs).
+	\item Estandarización  (tantas hs)
+	\item Tarea 3 (tantas hs)
+	\end{enumerate}
+\item Hardware.
+	\begin{enumerate}
+	\item Tarea 1 (tantas hs)
+	\item Tarea 2 (tantas hs)
+	\item Tarea 3 (tantas hs)
+	\end{enumerate}
+\item Documentación.
+	\begin{enumerate}
+	\item Tarea 1 (tantas hs)
+	\item Tarea 2 (tantas hs)
+	\item Tarea 3 (tantas hs)
+	\item Tarea 4 (tantas hs)
+	\item Tarea 5 (tantas hs)
+	\end{enumerate}
+\end{enumerate}
+
+Cantidad total de horas: (tantas hs)
 \begin{consigna}{red}
 El WBS debe tener relación directa o indirecta con los requerimientos.  Son todas las actividades que se harán en el proyecto para dar cumplimiento a los requerimientos. Se recomienda mostrar el WBS mediante una lista indexada:
 
