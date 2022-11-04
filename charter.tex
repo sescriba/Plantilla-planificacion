@@ -92,7 +92,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en la implementación de un prototipo de un sistema de riego por goteo, y tendrá un presupuesto preliminar estimado de 120 hs de trabajo y ARS 10000, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en la implementación de un prototipo de un sistema de riego por goteo, y tendrá un presupuesto preliminar estimado de 70 hs de trabajo y ARS 10000, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -264,6 +264,7 @@ Se debe indicar explícitamente el criterio para calcular los \textit{story poin
 
 Aquí se enumeran los entregables que dispondrá este proyecto.
 \begin{itemize}
+	\item Hardware funcional basado en módulo ESP32.
 	\item Manual de usuario.
 	\item Guía de instalación.
 	\item Diagrama de circuitos esquemáticos.
@@ -272,81 +273,37 @@ Aquí se enumeran los entregables que dispondrá este proyecto.
 	\item Informe final.
 
 \end{itemize}
-\begin{consigna}{red}
-
-Los entregables del proyecto son (ejemplo):
-
-\begin{itemize}
-	\item Manual de uso
-	\item Diagrama de circuitos esquemáticos
-	\item Código fuente del firmware
-	\item Diagrama de instalación
-	\item Informe final
-	\item etc...
-\end{itemize}
-
-\end{consigna}
 
 \section{9. Desglose del trabajo en tareas}
 \label{sec:wbs}
 
 De acuerdo a los requerimientos planteados en la sección \ref{sec:requerimientos} es que se proyecta el siguiente desglose de tareas.
 \begin{enumerate}
-\item Firmware.
+\item Firmware y software.
 	\begin{enumerate}
-	\item Planeamiento de la maquina de estados (5 hs).
+	\item Planificación general del firmware(5 hs).
 	\item Desarrollo del código fuente (25 hs).
-	\item Estandarización  (tantas hs)
-	\item Tarea 3 (tantas hs)
+	\item Estandarización y comentado de código (2 hs).
+	\item Desarrollo de servidor y aplicación de usuario (10 hs)
 	\end{enumerate}
 \item Hardware.
 	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
+	\item Adquisición de insumos (2 hs).
+	\item Armado de prototipo (5 hs).
+	\end{enumerate}
+\item Testing.
+	\begin{enumerate}
+	\item Pruebas del hardware (1 hs).
+	\item Pruebas del firmware (3 hs).
 	\end{enumerate}
 \item Documentación.
 	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
-	\item Tarea 4 (tantas hs)
-	\item Tarea 5 (tantas hs)
+	\item Armado de documentación, guía de usuario y diagramado (5 hs).
+	\item Desarrollo de informe final (10 hs).
 	\end{enumerate}
 \end{enumerate}
 
-Cantidad total de horas: (tantas hs)
-\begin{consigna}{red}
-El WBS debe tener relación directa o indirecta con los requerimientos.  Son todas las actividades que se harán en el proyecto para dar cumplimiento a los requerimientos. Se recomienda mostrar el WBS mediante una lista indexada:
-
-\begin{enumerate}
-\item Grupo de tareas 1
-	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
-	\end{enumerate}
-\item Grupo de tareas 2
-	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
-	\end{enumerate}
-\item Grupo de tareas 3
-	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
-	\item Tarea 4 (tantas hs)
-	\item Tarea 5 (tantas hs)
-	\end{enumerate}
-\end{enumerate}
-
-Cantidad total de horas: (tantas hs)
-
-Se recomienda que no haya ninguna tarea que lleve más de 40 hs. 
-
-\end{consigna}
+Cantidad total de horas: (68 hs).
 
 \section{10. Diagrama de Activity On Node}
 \label{sec:AoN}
