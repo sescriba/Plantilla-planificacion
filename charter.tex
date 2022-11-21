@@ -69,12 +69,12 @@
 \rowcolor[HTML]{C0C0C0} 
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
 0      & Creación del documento                                 &\fechaInicioName \\ \hline
-1      & Se completa hasta el punto 5 inclusive                 & 03/11/2022 \\ \hline
-%2      & Se completa hasta el punto 7 inclusive
+1      & Se completa hasta el punto 5 inclusive                 & 03 de noviembre de 2022 \\ \hline
+2      & Se completa hasta el punto 9 inclusive				  & 06 de noviembre de 2022 \\ \hline
 %		  Se puede agregar algo más \newline
 %		  En distintas líneas \newline
 %		  Así                                                    & dd/mm/aaaa \\ \hline
-%3      & Se completa hasta el punto 11 inclusive                & dd/mm/aaaa \\ \hline
+3      & Se completa hasta el punto 12 inclusive                & 12 de noviembre de 2022 \\ \hline
 %4      & Se completa el plan	                                 & dd/mm/aaaa \\ \hline
 \end{tabularx}
 \end{table}
@@ -92,7 +92,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en la implementación de un prototipo de un sistema de riego por goteo, y tendrá un presupuesto preliminar estimado de 70 hs de trabajo y ARS 10000, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en la implementación de un prototipo de un sistema de riego por goteo, y tendrá un presupuesto preliminar estimado de 600 hs de trabajo y ARS 40700, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -115,18 +115,18 @@ Se adjunta a esta acta la planificación inicial.
 \section{1. Descripción técnica-conceptual del proyecto a realizar}
 \label{sec:descripcion}
 
-Con el objetivo de aprender nuevas tecnologías y aplicar y arraigar los conocimientos adquiridos en la especialidad de Sistemas Embebidos de la UBA es que se propone el presente proyecto. Este busca implementar nuevas tecnologías a los sistemas de riegos actuales con el propósito de garantizar un cultivo de excelencia, donde el grado de impacto negativo de las variables climáticas sean lo menor posible. En complemento, se propone también suministrar un sistema de iluminación moderno y vistoso. 
+El objetivo del presente trabajo es implementar nuevas tecnologías a los sistemas de riegos actuales con la finalidad de garantizar un cultivo de excelencia, donde el grado de impacto negativo de las variables climáticas sean lo menor posible. De forma complementaria, se propone también suministrar un sistema de iluminación moderno y vistoso. 
 
-De esta manera, surgen una gran variedad de soluciones tecnológicas siendo imperioso seleccionar la que mejor se adapte a satisfacer esta necesidad. Por ello es que se propone utilizar uno o más sensores de humedad por cada cultivo y, mediante un lazo de control cerrado, suministrar el agua que sea requerida. La información para cada especie de planta se encontrará en un servidor virtual y mismo enviará la información al sistema embebido por WI-FI.
+Para cumplimentar con lo recién planteado, se propone utilizar uno o más sensores de humedad por cada cultivo y, mediante un lazo de control cerrado, suministrar el agua que sea requerida. La información para cada especie de planta se encontrará en un servidor virtual y el mismo enviará la información al sistema embebido por Wi-Fi.
 
-A diferencia de otros sistemas de riego, el presente incorpora nuevas tecnologías de comunicación y una interfaz de usuario. Es así que cualquier persona con un SmarthPhone podrá configurar el cultivo asociado a un sensor y obtener estadísticas de la humedad de la tierra. También controlará un arreglo de LEDs RGB situado cercano a un sensor o plantín.
+A diferencia de otros sistemas de riego, el presente incorpora nuevas tecnologías de comunicación y una interfaz de usuario. Esto permite que cualquier persona con un smarthphone pueda configurar el cultivo asociado a un sensor y obtener estadísticas de la humedad de la tierra así como controlar un arreglo de LEDs RGB situado cercano a un sensor o plantín.
 
-En la Figura \ref{fig:diagBloques} se puede observar los diferentes bloques del proyecto, seccionado de acuerdo a las tecnologías a utilizar. La interfaz de usuario abarca el high level tecnológico y más cercano a la persona, mientras que el sistema embebido representa el low level tecnológico y más lejano a la persona.
+En la Figura \ref{fig:diagBloques} se puede observar los diferentes bloques del proyecto, seccionado de acuerdo a las tecnologías a utilizar. La interfaz de usuario abarca el alto nivel tecnológico y más cercano a la persona, mientras que el sistema embebido representa el bajo nivel tecnológico y más lejano a la persona.
 
 \begin{figure}[htpb]
 \centering 
 \includegraphics[width=1\textwidth]{./Figuras/digBloq.png}
-\caption{Diagrama en bloques del sistema}
+\caption{Diagrama en bloques del sistema.}
 \label{fig:diagBloques}
 \end{figure}
 
@@ -134,7 +134,7 @@ En la Figura \ref{fig:diagBloques} se puede observar los diferentes bloques del 
 \section{2. Identificación y análisis de los interesados}
 \label{sec:interesados}
 
-En esta sección se estudian los interesados en el proyecto. En la Tabla \ref{tab:interesados} se puede apreciar los distintos roles, organización y puesto de las personas que poseen un cierto interés en el producto a desarrollar.
+En esta sección se presentan los interesados en el proyecto. En la Tabla \ref{tab:interesados} se puede apreciar los distintos roles, organización y puesto de las personas que poseen un cierto interés en el producto a desarrollar.
 
 \begin{table}[ht]
 %\caption{Identificación de los interesados}
@@ -170,7 +170,7 @@ El propósito de este proyecto es diseñar un prototipo funcional capaz de admin
 \section{4. Alcance del proyecto}
 \label{sec:alcance}
 
-Acorde a las necesidades del cliente, el proyecto incluye el desarrollo de un firmware en lenguaje C encargado del control a lazo cerrado del sistema de riego y su comunicación con un servidor. También es parte de este proyecto el desarrollo mecánico de un prototipo funcional de riego por goteo que responda a las necesidades de un único cultivo. Además se incluye el código para el control del sistema de iluminación y su desarrollo físico y, por último, una demo de una interfaz de usuario para utilizar en SmartPhones.
+Acorde a las necesidades del cliente, el proyecto incluye el desarrollo de un firmware en lenguaje C encargado del control a lazo cerrado del sistema de riego y su comunicación con un servidor. También es parte de este proyecto el desarrollo mecánico de un prototipo funcional de riego por goteo que responda a las necesidades de un único cultivo. Además, se incluye el código para el control del sistema de iluminación y su desarrollo físico y, por último, una demo de una interfaz de usuario para utilizar en smartphones.
 
 En cambio, no es parte de este proyecto el desarrollo del código de la interfaz de usuario y brindar soporte a la misma. Tampoco se incluye el desarrollo de un PBC para alojar los diferentes componentes ni el desarrollo del hardware necesario.
 
@@ -182,8 +182,8 @@ Para el desarrollo del presente proyecto se supone que:
 
 \begin{itemize}
 	\item Se conocen todos los conceptos técnicos necesarios para su desarrollo. 
-	\item Se dispone de los recursos económicos como materiales.
-	\item Se dispone de un tiempo acotado a las necesidades del cliente y se debe ejecutar en dos meses.
+	\item Se dispone de los recursos económicos como de los materiales.
+	\item Se dispone de un tiempo acotado a las necesidades del cliente: el proyecto se debe ejecutar en dos meses.
 	\item El director del proyecto tendrá su participación, brindando ideas y corrigiendo errores.
 	\item El impacto de las condiciones macroeconómicas y reglamentarias será mínimo.
 \end{itemize}
@@ -193,76 +193,82 @@ Para el desarrollo del presente proyecto se supone que:
 
 En la siguiente sección se enumeran los requerimientos del proyecto propuesto.
 \begin{enumerate}
-	\item Requerimientos funcionales de firmware:
+	\item Requerimientos funcionales del firmware:
 		\begin{enumerate}
 			\item Debe estar codificado en lenguaje C.
 			\item Debe incluir un sistema operativo de tiempo real.
-			\item Debe ser portable y escalable.
-			\item Debe respetar los estándares de codificación para lograr un código prolijo, legible y entendible.
-			\item Debe aplicar los conocimientos adquiridos a lo largo de la cursada de la especialidad en Sistemas Embebidos.
+			\item Debe ser portable a otras plataformas.
+			\item Debe ser escalable a múltiples goteros.
+			\item El código debe ser prolijo, legible y entendible.
+%			\item Debe aplicar los conocimientos adquiridos a lo largo de la cursada de la especialidad en Sistemas Embebidos.
 		\end{enumerate}
 	\item Requerimientos funcionales de hardware:
 		\begin{enumerate}
 			\item Deben utilizarse el módulo ESP32 de Espressif como controlador general.
 			\item Deben utilizarse las placas de evaluación sin la necesidad de realizar un PCB.
-			\item Los sensores de humedad deben ser del modelo HD38 de alta calidad y bajo costo.
-			\item Se debe garantizar la tensión y corriente necesaria para alimentar el sistema de iluminación y el mecanismo de goteo.
-			\item Toda la electrónica sin uso directo (es decir aquello que no sean sensores, luces o cableado) debe estar bajo una protección mínima de la humedad.
-			\item Debe aplicar los conocimientos adquiridos a lo largo de la cursada de la especialidad en Sistemas Embebidos.
+			\item Los sensores de humedad deben ser del modelo HD38.
+			\item Se debe garantizar la tensión y corriente mínima para alimentar el sistema de iluminación y el mecanismo de goteo de acuerdo a especificaciones de las hojas de datos.
+			\item Toda la electrónica sin uso directo (es decir aquello que no sean sensores, luces o cableado) debe estar bajo una protección de humedad IP23.
+%			\item Debe aplicar los conocimientos adquiridos a lo largo de la cursada de la especialidad en Sistemas Embebidos.
 		\end{enumerate}
-	\item Requerimientos funcionales de la User Interface:
+	\item Requerimientos funcionales de la Interfaz de Usuario:
 		\begin{enumerate}
-			\item Deben ser simple y fácil de entender y utilizar.
+			\item Deben ser apta para smartphone.
+			\item Deben tener diseño responsivo.
 		\end{enumerate}
 	\item Requerimientos de documentación
 		\begin{enumerate}
 			\item La documentación debe presentarse en formato PDF usando lenguaje Latex.
-			\item Debe poder explicar el funcionamiento del producto y ser suficiente para que el usuario pueda utilizarlo.
+			\item Debe presentarse un manual de usuario que explique el funcionamiento del producto.
 		\end{enumerate}
 \end{enumerate}
 
 \section{7. Historias de usuarios (\textit{Product backlog})}
 \label{sec:backlog}
 
-A continuación se adjuntan algunas Historias de usuarios. Para valorarlas se propone un sistema de puntos ponderados teniendo en cuenta la dificultad, la complejidad y la incertidumbre (o riesgo involucrado) del requerimiento planteado en la historia. Cada uno de estos tópicos tendrán un peso del cual dependerá el puntaje asignado y respetando el siguiente esquema:
-\begin{itemize}
-	\item Dificultad:
-	\begin{itemize}
-		\item Bajo: 1 punto.
-		\item Medio: 5 puntos.
-		\item Alto: 9 puntos.
-	\end{itemize}
-	\item Complejidad:
-	\begin{itemize}
-		\item Bajo: 3 puntos.
-		\item Medio: 9 puntos.
-		\item Alto: 12 puntos.
-	\end{itemize}
-	\item Incertidumbre:
-	\begin{itemize}
-		\item Bajo: 1 punto.
-		\item Medio: 3 puntos.
-		\item Alto: 5 puntos.
-	\end{itemize}
-\end{itemize}
-De esta forma, para comprar entre historias se calculará el puntaje estimado de acuerdo a la serie de Fibonacci, aproximando al valor más cercano.
+A continuación se adjuntan las principales Historias de usuarios. Para valorarlas se propone un sistema de puntos continuos entre 0 y 10, ponderando la dificultad, la complejidad y la incertidumbre (o riesgo involucrado) del requerimiento planteado en la historia. De esta forma, para comparar entre historias se calcula el esfuerzo requerido a partir de la suma de los puntos y estimado de acuerdo a la serie de Fibonacci, aproximando al valor más cercano.
 \begin{enumerate}
-	\item Historia uno:
+	\item ''Como usuario quiero un sistema de riego para no perder tiempo regando plantas''.
+	\begin{enumerate}
+		\item Dificultad: 8 puntos.
+		\item Complejidad: 5 puntos.
+		\item Incertidumbre: 7 puntos.
+		\item Total: 20 puntos, Fibonacci más cercano 21.
+	\end{enumerate}
+	\item ''Como herbóloga deseo que mis plantas tengan la humedad correcta para tener un cultivo de excelencia''.
+	\begin{enumerate}
+		\item Dificultad: 5 puntos.
+		\item Complejidad: 8 puntos.
+		\item Incertidumbre: 4 puntos.
+		\item Total: 17 puntos, Fibonacci más cercano 21.
+	\end{enumerate}
+	\item ''Como dueño del bar quiero un set de plantas vistoso para que mis comensales se sientan a gusto con el entorno decorativo''.
+	\begin{enumerate}
+		\item Dificultad: 6 puntos.
+		\item Complejidad: 8 puntos.
+		\item Incertidumbre: 3 puntos.
+		\item Total: 17 puntos, Fibonacci más cercano 21.
+	\end{enumerate}
+	\item ''Como expositor de cultivos quiero una iluminación precisa para ganar valor cultural''.
+	\begin{enumerate}
+		\item Dificultad: 3 puntos.
+		\item Complejidad: 4 puntos.
+		\item Incertidumbre: 1 puntos.
+		\item Total: 8 puntos, Fibonacci más cercano 8.
+	\end{enumerate}
+	\item ''Como herbóloga quiero disponer de toda la información del riego en mi celular para un mejor control''.
+	\begin{enumerate}
+		\item Dificultad: 5 puntos.
+		\item Complejidad: 2 puntos.
+		\item Incertidumbre: 0 puntos.
+		\item Total: 7 puntos, Fibonacci más cercano 7.
+	\end{enumerate}
 \end{enumerate}
-
-\begin{consigna}{red}
-entre 5 y 8 historias.
-Descripción: En esta sección se deben incluir las historias de usuarios y su ponderación (\textit{history points}). Recordar que las historias de usuarios son descripciones cortas y simples de una característica contada desde la perspectiva de la persona que desea la nueva capacidad, generalmente un usuario o cliente del sistema. La ponderación es un número entero que representa el tamaño de la historia comparada con otras historias de similar tipo.
-
-El formato propuesto es: "como [rol] quiero [tal cosa] para [tal otra cosa]."
-
-Se debe indicar explícitamente el criterio para calcular los \textit{story points} de cada historia
-\end{consigna}
 
 \section{8. Entregables principales del proyecto}
 \label{sec:entregables}
 
-Aquí se enumeran los entregables que dispondrá este proyecto.
+A continuación se enumeran los entregables que dispondrá este proyecto:
 \begin{itemize}
 	\item Hardware funcional basado en módulo ESP32.
 	\item Manual de usuario.
@@ -277,128 +283,75 @@ Aquí se enumeran los entregables que dispondrá este proyecto.
 \section{9. Desglose del trabajo en tareas}
 \label{sec:wbs}
 
-De acuerdo a los requerimientos planteados en la sección \ref{sec:requerimientos} es que se proyecta el siguiente desglose de tareas.
+De acuerdo a los requerimientos planteados en la sección \ref{sec:requerimientos} se proyecta el siguiente desglose de tareas.
 \begin{enumerate}
 \item Firmware y software.
 	\begin{enumerate}
-	\item Planificación general del firmware(5 hs).
-	\item Desarrollo del código fuente (25 hs).
-	\item Estandarización y comentado de código (2 hs).
-	\item Desarrollo de servidor y aplicación de usuario (10 hs)
+	\item Investigación de productos existentes y necesidades del cliente (30 hs).
+	\item Planificación del diseño (30 hs).
+	\item Planificación del proyecto (40 hs).
+	\item Planificación y diseño del firmware (13 hs).
+	\item Desarrollo del código fuente de la Maquina de Estados (30 hs).
+	\item Desarrollo del código fuente del Sistema Operativo en Tiempo Real (35 hs).
+	\item Desarrollo de servidor web (30 hs).
+	\item Desarrollo de aplicación de usuario (30 hs).
 	\end{enumerate}
 \item Hardware.
 	\begin{enumerate}
-	\item Adquisición de insumos (2 hs).
-	\item Armado de prototipo (5 hs).
+	\item Planificación y diseño del hardware(12 hs).
+	\item Adquisición de insumos (10 hs).
+	\item Armado del prototipo de riego (35 hs).
+	\item Armado del prototipo de iluminación (25 hs).
 	\end{enumerate}
 \item Testing.
 	\begin{enumerate}
-	\item Pruebas del hardware (1 hs).
-	\item Pruebas del firmware (3 hs).
+	\item Pruebas del hardware (40 hs).
+	\item Pruebas del firmware (40 hs).
 	\end{enumerate}
 \item Documentación.
 	\begin{enumerate}
-	\item Armado de documentación, guía de usuario y diagramado (5 hs).
-	\item Desarrollo de informe final (10 hs).
+	\item Documentación del código fuente (30 hs).
+	\item Documentación del diseño (30 hs).
+	\item Armado de documentación, guía de usuario y diagramado (40 hs).
+	\item Desarrollo del informe de avance (30 hs).
+	\item Desarrollo de la memoria técnica (70 hs).
 	\end{enumerate}
 \end{enumerate}
 
-Cantidad total de horas: (68 hs).
+Cantidad total de horas: (600 hs).
 
 \section{10. Diagrama de Activity On Node}
 \label{sec:AoN}
 
-\begin{consigna}{red}
-Armar el AoN a partir del WBS definido en la etapa anterior. 
-
-%La figura \ref{fig:AoN} fue elaborada con el paquete latex tikz y pueden consultar la siguiente referencia \textit{online}:
-
-%\url{https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_3)\%E2\%80\%94Creating_Flowcharts}
-
-\end{consigna}
+A partir del desglose de tareas de la sección \ref{sec:wbs}, se genera el diagrama de Activity On Node de la figura \ref{fig:AoN}.
 
 \begin{figure}[htpb]
 \centering 
-\includegraphics[width=.8\textwidth]{./Figuras/AoN.png}
-\caption{Diagrama en \textit{Activity on Node}}
+\includegraphics[width=1\textwidth]{./Figuras/diagAoN.png}
+\caption{Activity on Node. El color rojo representa las tareas de documentación, el color amarillo las tareas relativas al firmware y el azul las relativas al hardware. La unidad de tiempo es la hora.}
 \label{fig:AoN}
 \end{figure}
-
-Indicar claramente en qué unidades están expresados los tiempos.
-De ser necesario indicar los caminos semicríticos y analizar sus tiempos mediante un cuadro.
-Es recomendable usar colores y un cuadro indicativo describiendo qué representa cada color, como se muestra en el siguiente ejemplo:
-
-
 
 \section{11. Diagrama de Gantt}
 \label{sec:gantt}
 
-\begin{consigna}{red}
-
-Existen muchos programas y recursos \textit{online} para hacer diagramas de gantt, entre los cuales destacamos:
-
-\begin{itemize}
-\item Planner
-\item GanttProject
-\item Trello + \textit{plugins}. En el siguiente link hay un tutorial oficial: \\ \url{https://blog.trello.com/es/diagrama-de-gantt-de-un-proyecto}
-\item Creately, herramienta online colaborativa. \\\url{https://creately.com/diagram/example/ieb3p3ml/LaTeX}
-\item Se puede hacer en latex con el paquete \textit{pgfgantt}\\ \url{http://ctan.dcc.uchile.cl/graphics/pgf/contrib/pgfgantt/pgfgantt.pdf}
-\end{itemize}
-
-Pegar acá una captura de pantalla del diagrama de Gantt, cuidando que la letra sea suficientemente grande como para ser legible. 
-Si el diagrama queda demasiado ancho, se puede pegar primero la ``tabla'' del Gantt y luego pegar la parte del diagrama de barras del diagrama de Gantt.
-
-Configurar el software para que en la parte de la tabla muestre los códigos del EDT (WBS).\\
-Configurar el software para que al lado de cada barra muestre el nombre de cada tarea.\\
-Revisar que la fecha de finalización coincida con lo indicado en el Acta Constitutiva.
-
-En la figura \ref{fig:gantt}, se muestra un ejemplo de diagrama de gantt realizado con el paquete de \textit{pgfgantt}. En la plantilla pueden ver el código que lo genera y usarlo de base para construir el propio.
-
-\begin{figure}[htbp]
-\begin{center}
-\begin{ganttchart}{1}{12}
-  \gantttitle{2020}{12} \\
-  \gantttitlelist{1,...,12}{1} \\
-  \ganttgroup{Group 1}{1}{7} \\
-  \ganttbar{Task 1}{1}{2} \\
-  \ganttlinkedbar{Task 2}{3}{7} \ganttnewline
-  \ganttmilestone{Milestone o hito}{7} \ganttnewline
-  \ganttbar{Final Task}{8}{12}
-  \ganttlink{elem2}{elem3}
-  \ganttlink{elem3}{elem4}
-\end{ganttchart}
-\end{center}
-\caption{Diagrama de gantt de ejemplo}
-\label{fig:gantt}
-\end{figure}
-
+En la figura \ref{fig:diagGantt} se presenta un diagrama de Gantt con la planificación de las tareas analizadas en la sección \ref{sec:wbs}. En este caso se analiza cómo se distribuirán las tareas a lo largo de los diferentes meses de trabajo, partiendo de que el inicio de las actividades será en el mes de Enero del 2023 y finalizará en Julio de 2023. Para este diagrama se calculan entre 10 y 15 horas de trabajo por semana aproximadamente, cantidad que puede variar de acuerdo a la demanda de trabajo.
 
 \begin{landscape}
 \begin{figure}[htpb]
 \centering 
-\includegraphics[height=.85\textheight]{./Figuras/Gantt-2.png}
-\caption{Ejemplo de diagrama de Gantt rotado}
+\includegraphics[height=.85\textheight]{./Figuras/diagGantt.png}
+\caption{Diagrama de Gantt. El color rojo representa las tareas de documentación, el color amarillo las tareas relativas al firmware y el azul las relativas al hardware.}
 \label{fig:diagGantt}
 \end{figure}
 
 \end{landscape}
 
-\end{consigna}
-
 
 \section{12. Presupuesto detallado del proyecto}
 \label{sec:presupuesto}
 
-\begin{consigna}{red}
-Si el proyecto es complejo entonces separarlo en partes:
-\begin{itemize}
-	\item Un total global, indicando el subtotal acumulado por cada una de las áreas.
-	\item El desglose detallado del subtotal de cada una de las áreas.
-\end{itemize}
-
-IMPORTANTE: No olvidarse de considerar los COSTOS INDIRECTOS.
-
-\end{consigna}
+Esta sección presenta un presupuesto detallado requerido para el desarrollo del proyecto. En la tabla \ref{tab:presupuesto} se encuentran los costos tanto directos como indirectos, subtotales y totales.
 
 \begin{table}[htpb]
 \centering
@@ -411,24 +364,36 @@ Descripción &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total} \\ \hline
- &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} \\ \hline
- &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
+ Módulo ESP32&
+  \multicolumn{1}{c|}{1} &
+  \multicolumn{1}{c|}{800} &
+  \multicolumn{1}{c|}{800} \\ \hline
+ Sensor HD38&
+  \multicolumn{1}{c|}{3} &
+  \multicolumn{1}{c|}{3500} &
+  \multicolumn{1}{c|}{10500} \\ \hline
+ Manguera de riego polietireno 1/2''&
+  \multicolumn{1}{c|}{2} &
+  \multicolumn{1}{c|}{250} &
+  \multicolumn{1}{c|}{500} \\ \hline
+ Gotero&
+  \multicolumn{1}{c|}{3} &
+  \multicolumn{1}{c|}{500} &
+  \multicolumn{1}{c|}{1500} \\ \hline
+ Bomba para control de gotero&
+  \multicolumn{1}{c|}{3} &
+  \multicolumn{1}{c|}{3500} &
+  \multicolumn{1}{c|}{10500} \\ \hline
+ Pack Cables Macho-Hembra&
+  \multicolumn{1}{c|}{2} &
+  \multicolumn{1}{c|}{700} &
+  \multicolumn{1}{c|}{1400} \\ \hline
+ Caja protección IP23&
+  \multicolumn{1}{c|}{1} &
+  \multicolumn{1}{c|}{1500} &
+  \multicolumn{1}{c|}{1500} \\ \hline
 \multicolumn{3}{|c|}{SUBTOTAL} &
-  \multicolumn{1}{c|}{} \\ \hline
+  \multicolumn{1}{c|}{26700} \\ \hline
 \rowcolor[HTML]{C0C0C0} 
 \multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}COSTOS INDIRECTOS} \\ \hline
 \rowcolor[HTML]{C0C0C0} 
@@ -436,126 +401,191 @@ Descripción &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total} \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
+ Electricidad&
+  \multicolumn{1}{c|}{6 meses} &
+  \multicolumn{1}{c|}{1000} &
+  \multicolumn{1}{c|}{6000} \\ \hline
+ Internet&
+  \multicolumn{1}{c|}{6 meses} &
+  \multicolumn{1}{c|}{2000} &
+  \multicolumn{1}{c|}{12000} \\ \hline
 \multicolumn{3}{|c|}{SUBTOTAL} &
-  \multicolumn{1}{c|}{} \\ \hline
+  \multicolumn{1}{c|}{14000} \\ \hline
 \rowcolor[HTML]{C0C0C0}
-\multicolumn{3}{|c|}{TOTAL} &
+\multicolumn{3}{|c|}{TOTAL} & 40700
    \\ \hline
 \end{tabularx}%
+\caption{Presupuesto del proyecto expresado en ARS.}
+\label{tab:presupuesto}
 \end{table}
 
 
 \section{13. Gestión de riesgos}
 \label{sec:riesgos}
 
-\begin{consigna}{red}
-a) Identificación de los riesgos (al menos cinco) y estimación de sus consecuencias:
- 
-Riesgo 1: detallar el riesgo (riesgo es algo que si ocurre altera los planes previstos de forma negativa)
-\begin{itemize}
-	\item Severidad (S): mientras más severo, más alto es el número (usar números del 1 al 10).\\
-	Justificar el motivo por el cual se asigna determinado número de severidad (S).
-	\item Probabilidad de ocurrencia (O): mientras más probable, más alto es el número (usar del 1 al 10).\\
-	Justificar el motivo por el cual se asigna determinado número de (O). 
-\end{itemize}   
+En esta sección se identifican los principales riesgos del proyecto y sus consecuencias, así como el plan de mitigación para cada caso.
 
-Riesgo 2:
+Riesgo 1: imposibilidad de responder de acuerdo a los tiempos planteado en la sección \ref{sec:gantt}.
 \begin{itemize}
-	\item Severidad (S): 
-	\item Ocurrencia (O):
+	\item Severidad (S): 8, dado que deberán replantearse los tiempos de desarrollo y no cumplir con la meta final.
+	\item Probabilidad de ocurrencia (O): 7, dado que hay nuevos desafíos laborales planteado que demandaran mayor tiempo de trabajo. 
 \end{itemize}
 
-Riesgo 3:
+Riesgo 2: no conseguir los componentes necesarios.
 \begin{itemize}
-	\item Severidad (S): 
-	\item Ocurrencia (O):
+	\item Severidad (S): 8, ya que no podrá construirse el prototipo de testeo.
+	\item Probabilidad de ocurrencia (O): 3, ya que son componentes de fácil acceso y de fabricación nacional. 
 \end{itemize}
 
+Riesgo 3: incurrir en gastos mayores a los presupuestados.
+\begin{itemize}
+	\item Severidad (S): 3, dado que se deberá gastar mayor cantidad de dinero.
+	\item Probabilidad de ocurrencia (O): 9, dado el contexto inflacionario del país. 
+\end{itemize}
 
-b) Tabla de gestión de riesgos:      (El RPN se calcula como RPN=SxO)
+Riesgo 4: no disponer de los conocimientos técnicos a tiempo.
+\begin{itemize}
+	\item Severidad (S): 7, ya que imposibilitara continuar con un proyecto de calidad.
+	\item Probabilidad de ocurrencia (O): 7, ya que se iniciará el proyecto en simultaneo a la cursada de la carrera. 
+\end{itemize}
 
+Riesgo 5: cancelación del proyecto por parte del ciente.
+\begin{itemize}
+	\item Severidad (S): 9, dado que implica el fin del proyecto.
+	\item Probabilidad de ocurrencia (O): 2, dado el alto interés del cliente en el producto. 
+\end{itemize}
+
+La tabla \ref{tab:riesgos} resume los riesgo identificados y sus mitigaciones.
 \begin{table}[htpb]
 \centering
 \begin{tabularx}{\linewidth}{@{}|X|c|c|c|c|c|c|@{}}
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
+Imposibilidad de responder de acuerdo a los tiempos planteado en la sección \ref{sec:gantt}.&8&7&56&5&2&10\\ \hline
+No conseguir los componentes necesarios.&8&3&24&-&-&-\\ \hline
+Incurrir en gastos mayores a los presupuestados.&3&9&18&-&-&-\\ \hline
+No disponer de los conocimientos técnicos a tiempo.&7&7&49&2&1&2\\ \hline
+Cancelación del proyecto por parte del ciente.&9&2&18&-&-&-\\ \hline
 \end{tabularx}%
+\caption{Gestión de riesgos.}
+\label{tab:riesgos}
 \end{table}
 
-Criterio adoptado: 
-Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a...
+A continuación se establece el plan de mitigación de los riesgos cuyo RPN fuese mayor a 25 puntos.
 
-Nota: los valores marcados con (*) en la tabla corresponden luego de haber aplicado la mitigación.
+Riesgo 1: imposibilidad de responder de acuerdo a los tiempos planteado en la sección \ref{sec:gantt}. Se mitigará adaptando el cronograma de trabajo teniendo en cuenta las dificultades que surjan en el camino. También se hablará con el cliente para coordinar nuevos tiempos de entrega.
+\begin{itemize}
+	\item Severidad (S): 5, dado que habrá un nuevo tiempo de entrega.
+	\item Probabilidad de ocurrencia (O): 2, ya que se tendrá más información de avances y la realimentación de tiempos será más exacta. 
+\end{itemize}
 
-c) Plan de mitigación de los riesgos que originalmente excedían el RPN máximo establecido:
- 
-Riesgo 1: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
-  Nueva asignación de S y O, con su respectiva justificación:
-  - Severidad (S): mientras más severo, más alto es el número (usar números del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de severidad (S).
-  - Probabilidad de ocurrencia (O): mientras más probable, más alto es el número (usar del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de (O).
-
-Riesgo 2: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
- 
-Riesgo 3: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
-
-\end{consigna}
+Riesgo 4: no disponer de los conocimientos técnicos a tiempo. Se mitigará adquiriendo los conocimientos necesarios de manera extracurricular.
+\begin{itemize}
+	\item Severidad (S): 2, dado que se dispone de los materiales de estudio.
+	\item Probabilidad de ocurrencia (O): 1, ya que los conocimientos serán adquiridos correctamente. 
+\end{itemize}
 
 
 \section{14. Gestión de la calidad}
 \label{sec:calidad}
+La gestión de la calidad es una parte importante del proyecto, es por ello que se realiza el análisis para cada uno de los requerimientos mencionados en la sección \ref{sec:requerimientos}.
 
-\begin{consigna}{red}
-Para cada uno de los requerimientos del proyecto indique:
 \begin{itemize} 
-\item Req \#1: copiar acá el requerimiento.
-
+\item Req \#1: Debe estar codificado en lenguaje C.
 \begin{itemize}
-	\item Verificación para confirmar si se cumplió con lo requerido antes de mostrar el sistema al cliente. Detallar 
-	\item Validación con el cliente para confirmar que está de acuerdo en que se cumplió con lo requerido. Detallar  
+	\item Verificación: se leerá el código fuente.
+	\item Validación: el mismo debe compilar con un IDE configurado en lenguaje C.
 \end{itemize}
 
+\item Req \#2: Debe ser portable a otras plataformas.
+\begin{itemize}
+	\item Verificación: se compilara para otras plataformas.
+	\item Validación: se mostrará al cliente el mismo código corriendo en otra plataforma.
 \end{itemize}
 
-Tener en cuenta que en este contexto se pueden mencionar simulaciones, cálculos, revisión de hojas de datos, consulta con expertos, mediciones, etc.  Las acciones de verificación suelen considerar al entregable como ``caja blanca'', es decir se conoce en profundidad su funcionamiento interno.  En cambio, las acciones de validación suelen considerar al entregable como ``caja negra'', es decir, que no se conocen los detalles de su funcionamiento interno.
+\item Req \#3: Debe ser escalable a múltiples goteros.
+\begin{itemize}
+	\item Verificación: se realizarán simulaciones con múltiples goteros
+	\item Validación: se mostrará al cliente dichas simulaciones.
+\end{itemize}
 
-\end{consigna}
+\item Req \#4: El código debe ser prolijo, legible y entendible.
+\begin{itemize}
+	\item Verificación: se leerá el código y debe ser entendido por un programador ajeno al proyecto.
+	\item Validación: el código formará parte de la documentación.
+\end{itemize}
+
+\item Req \#5: Deben utilizarse el módulo ESP32 de Espressif como controlador general.
+\begin{itemize}
+	\item Verificación: se dispondrá del módulo especificado.
+	\item Validación: se realizarán pruebas de funcionamiento en dicho módulo.
+\end{itemize}
+
+\item Req \#6: Deben utilizarse las placas de evaluación sin la necesidad de realizar un PCB.
+\begin{itemize}
+	\item Verificación: se dispondrá de las placas de evaluación especificadas.
+	\item Validación: se realizarán pruebas de funcionamiento en dichas placas.
+\end{itemize}
+
+\item Req \#7: Los sensores de humedad deben ser del modelo HD38.
+\begin{itemize}
+	\item Verificación: se dispondrá de los módulos especificados.
+	\item Validación: se realizarán pruebas de funcionamiento en dichos módulos.
+\end{itemize}
+
+\item Req \#8: Se debe garantizar la tensión y corriente mínima para alimentar el sistema de iluminación y el mecanismo de goteo de acuerdo a especificaciones de las hojas de datos.
+\begin{itemize}
+	\item Verificación: se realizarán cálculos de tensión y corriente de acuerdo a las especificaciones técnicas.
+	\item Validación: se medirá tensión y corriente en todo el sistema.
+\end{itemize}
+
+\item Req \#9: Toda la electrónica sin uso directo (es decir aquello que no sean sensores, luces o cableado) debe estar bajo una protección de humedad IP23.
+\begin{itemize}
+	\item Verificación: se revisará los productos seleccionados para que cumpla con dicho requerimiento.
+	\item Validación: se realizarán pruebas de humedad para validar la calidad del prototipo.
+\end{itemize}
+
+\item Req \#10: Aplicación de Usuario debe ser apta para smartphone.
+\begin{itemize}
+	\item Verificación: se diseñará con programas cuya especificaciones permitan su uso en smartphones.
+	\item Validación: se correrá en un smartphone con sistema operativo Android.
+\end{itemize}
+
+\item Req \#11: Deben tener diseño responsivo.
+\begin{itemize}
+	\item Verificación: se realizará una prueba de uso por un usuario con conocimientos.
+	\item Validación: se realizará una prueba de uso por un usuario sin conocimientos.
+\end{itemize}
+
+\item Req \#12: La documentación debe presentarse en formato PDF usando lenguaje Latex.
+\begin{itemize}
+	\item Verificación: se leerá el código fuente.
+	\item Validación: el mismo debe ser leído en un lector PDF y disponer del formato correspondiente a la plantilla planteada.
+\end{itemize}
+
+\item Req \#13: Debe presentarse un manual de usuario que explique el funcionamiento del producto
+\begin{itemize}
+	\item Verificación: se leerá el manual de usuario.
+	\item Validación: se leerá por un usuario sin conocimientos.
+\end{itemize}
+\end{itemize}
+
 
 \section{15. Procesos de cierre}    
 \label{sec:cierre}
 
-\begin{consigna}{red}
-Establecer las pautas de trabajo para realizar una reunión final de evaluación del proyecto, tal que contemple las siguientes actividades:
+Finalmente se analizan las pautas de trabajo para realizar una reunión final de evaluación del proyecto, las cuales contemplan las siguientes actividades:
 
 \begin{itemize}
 	\item Pautas de trabajo que se seguirán para analizar si se respetó el Plan de Proyecto original:
-	 - Indicar quién se ocupará de hacer esto y cuál será el procedimiento a aplicar. 
+	 - Tanto estudiante como director se reunirán para analizar si se respetó el Plan de Proyecto original. En dicha reunión se dispondrá de este documento y se estudiará punto a punto que cada objetivo planteado haya sido cumplido. También se analizarán los riesgos asumidos y el correcto cumplimiento de los requisitos planteados.
+	 
 	\item Identificación de las técnicas y procedimientos útiles e inútiles que se emplearon, y los problemas que surgieron y cómo se solucionaron:
-	 - Indicar quién se ocupará de hacer esto y cuál será el procedimiento para dejar registro.
+	 - El estudiante hará un análisis de cada procedimiento que empleó y dejará constancia en un documento de los pros y contras de cada técnica utilizada, así como de los problemas que surgieron y las soluciones empleadas.
+	 
 	\item Indicar quién organizará el acto de agradecimiento a todos los interesados, y en especial al equipo de trabajo y colaboradores:
-	  - Indicar esto y quién financiará los gastos correspondientes.
+	  - El estudiante será el encargado de dicha tarea y financiará con sus propios fondos.
 \end{itemize}
-
-\end{consigna}
-
 
 \end{document}
