@@ -40,7 +40,7 @@
  
 \fechaINICIO{20 de octubre de 2022}		%Fecha de inicio de la cursada de GdP \fechaInicioName
 \fechaFINALPlan{8 de diciembre de 2022} 	%Fecha de final de cursada de GdP
-\fechaFINALTrabajo{15 de Agosto de 2022}	%Fecha de defensa pública del trabajo final
+\fechaFINALTrabajo{16 de octubre de 2023}	%Fecha de defensa pública del trabajo final
 
 
 \begin{document}
@@ -75,7 +75,7 @@ Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios 
 %		  En distintas líneas \newline
 %		  Así                                                    & dd/mm/aaaa \\ \hline
 3      & Se completa hasta el punto 12 inclusive                & 12 de noviembre de 2022 \\ \hline
-%4      & Se completa el plan	                                 & dd/mm/aaaa \\ \hline
+4      & Se completa el plan	                                 & 20 de noviembre de 2022 \\ \hline
 \end{tabularx}
 \end{table}
 
@@ -226,7 +226,7 @@ En la siguiente sección se enumeran los requerimientos del proyecto propuesto.
 \section{7. Historias de usuarios (\textit{Product backlog})}
 \label{sec:backlog}
 
-A continuación se adjuntan las principales Historias de usuarios. Para valorarlas se propone un sistema de puntos continuos entre 0 y 10, ponderando la dificultad, la complejidad y la incertidumbre (o riesgo involucrado) del requerimiento planteado en la historia. De esta forma, para comparar entre historias se calcula el esfuerzo requerido a partir de la suma de los puntos y estimado de acuerdo a la serie de Fibonacci, aproximando al valor más cercano.
+A continuación se adjuntan las principales Historias de usuarios. Para valorarlas se propone un sistema de puntos continuos entre 0 y 10, ponderando la dificultad, la complejidad y la incertidumbre (o riesgo involucrado) del requerimiento planteado en la historia. De esta forma, para comparar entre historias, se calcula el esfuerzo requerido a partir de la suma de los puntos y estimado de acuerdo a la serie de Fibonacci, aproximando al valor más cercano.
 \begin{enumerate}
 	\item ''Como usuario quiero un sistema de riego para no perder tiempo regando plantas''.
 	\begin{enumerate}
@@ -240,13 +240,6 @@ A continuación se adjuntan las principales Historias de usuarios. Para valorarl
 		\item Dificultad: 5 puntos.
 		\item Complejidad: 8 puntos.
 		\item Incertidumbre: 4 puntos.
-		\item Total: 17 puntos, Fibonacci más cercano 21.
-	\end{enumerate}
-	\item ''Como dueño del bar quiero un set de plantas vistoso para que mis comensales se sientan a gusto con el entorno decorativo''.
-	\begin{enumerate}
-		\item Dificultad: 6 puntos.
-		\item Complejidad: 8 puntos.
-		\item Incertidumbre: 3 puntos.
 		\item Total: 17 puntos, Fibonacci más cercano 21.
 	\end{enumerate}
 	\item ''Como expositor de cultivos quiero una iluminación precisa para ganar valor cultural''.
@@ -335,7 +328,29 @@ A partir del desglose de tareas de la sección \ref{sec:wbs}, se genera el diagr
 \section{11. Diagrama de Gantt}
 \label{sec:gantt}
 
-En la figura \ref{fig:diagGantt} se presenta un diagrama de Gantt con la planificación de las tareas analizadas en la sección \ref{sec:wbs}. En este caso se analiza cómo se distribuirán las tareas a lo largo de los diferentes meses de trabajo, partiendo de que el inicio de las actividades será en el mes de Enero del 2023 y finalizará en Julio de 2023. Para este diagrama se calculan entre 10 y 15 horas de trabajo por semana aproximadamente, cantidad que puede variar de acuerdo a la demanda de trabajo.
+En la figura \ref{fig:diagGantt} se presenta un diagrama de Gantt con la planificación de las tareas analizadas en la sección \ref{sec:wbs}. En este caso se analiza cómo se distribuirán las tareas a lo largo de los diferentes meses de trabajo, partiendo de que el inicio de las actividades será en el mes de Enero del 2023 y finalizará en Septiembre de 2023. Para este diagrama se calculan entre 10 y 15 horas de trabajo por semana aproximadamente, cantidad que puede variar de acuerdo a la demanda de trabajo. A su vez en la tabla \ref{tab:tabGantt} se observa en detalle las fechas de inicio y finalización de cada tarea, así como su duración y predecesora.
+
+\begin{table}[htpb]
+\centering
+\begin{tabularx}{\linewidth}{@{}|c|X|c|c|c|c|@{}}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+ID & Nombre de la Tarea & Duración & Comienzo & Fin & Predecesora \\ \hline
+1&Documentación Preliminar.&40 hs&02/01/2023&21/02/2023&-\\ \hline
+2&Investigación y Planificación.&85 hs&22/01/2023&28/02/2023&1\\ \hline
+3&Adquisición de insumos.&10 hs&08/02/2023&21/02/2023&2\\ \hline
+4&Desarrollo FW Maquina de Estados.&30 hs&01/03/2023&07/04/2023&2\\ \hline
+5&Desarollo FW RTOS.&35 hs&01/03/2023&14/04/2023&2\\ \hline
+6&Testing FW.&40 hs&01/04/2023&30/04/2023&4, 5\\ \hline
+7&Desarrollo HW.&60 hs&15/04/2023&31/05/2023&2, 3, 6\\ \hline
+8&Testing HW.&40 hs&15/05/2023&21/06/2023&7\\ \hline
+9&Desarrollo APP.&60 hs&22/06/2023&14/07/2023&2, 6\\ \hline
+10&Documentación de código y diseño.&60 hs&15/07/2023&07/08/2023&2, 9\\ \hline
+11&Desarrollo de Memoria Técnica y Presentación.&140 hs&15/07/2023&30/09/2023&2, 9\\ \hline
+\end{tabularx}%
+\caption{Tareas de gantt.}
+\label{tab:tabGantt}
+\end{table}
 
 \begin{landscape}
 \begin{figure}[htpb]
@@ -445,24 +460,24 @@ Riesgo 3: incurrir en gastos mayores a los presupuestados.
 
 Riesgo 4: no disponer de los conocimientos técnicos a tiempo.
 \begin{itemize}
-	\item Severidad (S): 7, ya que imposibilitara continuar con un proyecto de calidad.
+	\item Severidad (S): 7, ya que imposibilitará continuar con un proyecto de calidad.
 	\item Probabilidad de ocurrencia (O): 7, ya que se iniciará el proyecto en simultaneo a la cursada de la carrera. 
 \end{itemize}
 
-Riesgo 5: cancelación del proyecto por parte del ciente.
+Riesgo 5: cancelación del proyecto por parte del cliente.
 \begin{itemize}
-	\item Severidad (S): 9, dado que implica el fin del proyecto.
+	\item Severidad (S): 9, dado que el proyecto no se podrá realizar.
 	\item Probabilidad de ocurrencia (O): 2, dado el alto interés del cliente en el producto. 
 \end{itemize}
 
-La tabla \ref{tab:riesgos} resume los riesgo identificados y sus mitigaciones.
+La tabla \ref{tab:riesgos} muestra la matriz de gestión de riesgos, donde RPN se calcula como SxO.
 \begin{table}[htpb]
 \centering
 \begin{tabularx}{\linewidth}{@{}|X|c|c|c|c|c|c|@{}}
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
-Imposibilidad de responder de acuerdo a los tiempos planteado en la sección \ref{sec:gantt}.&8&7&56&5&2&10\\ \hline
+Imposibilidad de responder de acuerdo a los tiempos planteado en el Diagrama de Gantt.&8&7&56&5&2&10\\ \hline
 No conseguir los componentes necesarios.&8&3&24&-&-&-\\ \hline
 Incurrir en gastos mayores a los presupuestados.&3&9&18&-&-&-\\ \hline
 No disponer de los conocimientos técnicos a tiempo.&7&7&49&2&1&2\\ \hline
@@ -472,7 +487,7 @@ Cancelación del proyecto por parte del ciente.&9&2&18&-&-&-\\ \hline
 \label{tab:riesgos}
 \end{table}
 
-A continuación se establece el plan de mitigación de los riesgos cuyo RPN fuese mayor a 25 puntos.
+A continuación se establece el plan de mitigación de los riesgos cuyo RPN es mayor a 25 puntos.
 
 Riesgo 1: imposibilidad de responder de acuerdo a los tiempos planteado en la sección \ref{sec:gantt}. Se mitigará adaptando el cronograma de trabajo teniendo en cuenta las dificultades que surjan en el camino. También se hablará con el cliente para coordinar nuevos tiempos de entrega.
 \begin{itemize}
@@ -500,13 +515,13 @@ La gestión de la calidad es una parte importante del proyecto, es por ello que 
 
 \item Req \#2: Debe ser portable a otras plataformas.
 \begin{itemize}
-	\item Verificación: se compilara para otras plataformas.
+	\item Verificación: se compilará para otras plataformas.
 	\item Validación: se mostrará al cliente el mismo código corriendo en otra plataforma.
 \end{itemize}
 
 \item Req \#3: Debe ser escalable a múltiples goteros.
 \begin{itemize}
-	\item Verificación: se realizarán simulaciones con múltiples goteros
+	\item Verificación: se realizarán simulaciones con múltiples goteros.
 	\item Validación: se mostrará al cliente dichas simulaciones.
 \end{itemize}
 
@@ -542,13 +557,13 @@ La gestión de la calidad es una parte importante del proyecto, es por ello que 
 
 \item Req \#9: Toda la electrónica sin uso directo (es decir aquello que no sean sensores, luces o cableado) debe estar bajo una protección de humedad IP23.
 \begin{itemize}
-	\item Verificación: se revisará los productos seleccionados para que cumpla con dicho requerimiento.
+	\item Verificación: se revisará los productos seleccionados para que cumplan con dicho requerimiento.
 	\item Validación: se realizarán pruebas de humedad para validar la calidad del prototipo.
 \end{itemize}
 
-\item Req \#10: Aplicación de Usuario debe ser apta para smartphone.
+\item Req \#10: Aplicación de usuario debe ser apta para smartphone.
 \begin{itemize}
-	\item Verificación: se diseñará con programas cuya especificaciones permitan su uso en smartphones.
+	\item Verificación: se diseñará con programas cuyas especificaciones permitan el uso en smartphones.
 	\item Validación: se correrá en un smartphone con sistema operativo Android.
 \end{itemize}
 
@@ -561,13 +576,13 @@ La gestión de la calidad es una parte importante del proyecto, es por ello que 
 \item Req \#12: La documentación debe presentarse en formato PDF usando lenguaje Latex.
 \begin{itemize}
 	\item Verificación: se leerá el código fuente.
-	\item Validación: el mismo debe ser leído en un lector PDF y disponer del formato correspondiente a la plantilla planteada.
+	\item Validación: la misma debe ser leído en un lector PDF y disponer del formato correspondiente a la plantilla planteada.
 \end{itemize}
 
 \item Req \#13: Debe presentarse un manual de usuario que explique el funcionamiento del producto
 \begin{itemize}
 	\item Verificación: se leerá el manual de usuario.
-	\item Validación: se leerá por un usuario sin conocimientos.
+	\item Validación: dicho manual será leído por un usuario sin conocimientos.
 \end{itemize}
 \end{itemize}
 
@@ -575,17 +590,17 @@ La gestión de la calidad es una parte importante del proyecto, es por ello que 
 \section{15. Procesos de cierre}    
 \label{sec:cierre}
 
-Finalmente se analizan las pautas de trabajo para realizar una reunión final de evaluación del proyecto, las cuales contemplan las siguientes actividades:
+Finalmente, se analizan las pautas de trabajo para realizar una reunión final de evaluación del proyecto, las cuales contemplan las siguientes actividades:
 
 \begin{itemize}
 	\item Pautas de trabajo que se seguirán para analizar si se respetó el Plan de Proyecto original:
-	 - Tanto estudiante como director se reunirán para analizar si se respetó el Plan de Proyecto original. En dicha reunión se dispondrá de este documento y se estudiará punto a punto que cada objetivo planteado haya sido cumplido. También se analizarán los riesgos asumidos y el correcto cumplimiento de los requisitos planteados.
+	 - El estudiante y el director se reunirán para analizar si se respetó el Plan de Proyecto original. En dicha reunión se dispondrá de este documento y se estudiará punto a punto que cada objetivo planteado haya sido cumplido. También se analizarán los riesgos asumidos y el correcto cumplimiento de los requisitos planteados.
 	 
 	\item Identificación de las técnicas y procedimientos útiles e inútiles que se emplearon, y los problemas que surgieron y cómo se solucionaron:
 	 - El estudiante hará un análisis de cada procedimiento que empleó y dejará constancia en un documento de los pros y contras de cada técnica utilizada, así como de los problemas que surgieron y las soluciones empleadas.
 	 
 	\item Indicar quién organizará el acto de agradecimiento a todos los interesados, y en especial al equipo de trabajo y colaboradores:
-	  - El estudiante será el encargado de dicha tarea y financiará con sus propios fondos.
+	  - El estudiante será el encargado de dicha tarea y la misma se llevará a cabo el día de la presentación del trabajo final.
 \end{itemize}
 
 \end{document}
