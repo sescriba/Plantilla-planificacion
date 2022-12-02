@@ -332,21 +332,21 @@ En la figura \ref{fig:diagGantt} se presenta un diagrama de Gantt con la planifi
 
 \begin{table}[htpb]
 \centering
-\begin{tabularx}{\linewidth}{@{}|c|X|c|c|c|c|@{}}
+\begin{tabularx}{\linewidth}{@{}|c|X|X|c|c|c|c|@{}}
 \hline
 \rowcolor[HTML]{C0C0C0} 
-ID & Nombre de la Tarea & Duración & Comienzo & Fin & Predecesora \\ \hline
-1&Documentación Preliminar.&40 hs&02/01/2023&21/02/2023&-\\ \hline
-2&Investigación y Planificación.&85 hs&22/01/2023&28/02/2023&1\\ \hline
-3&Adquisición de insumos.&10 hs&08/02/2023&21/02/2023&2\\ \hline
-4&Desarrollo FW Maquina de Estados.&30 hs&01/03/2023&07/04/2023&2\\ \hline
-5&Desarollo FW RTOS.&35 hs&01/03/2023&14/04/2023&2\\ \hline
-6&Testing FW.&40 hs&01/04/2023&30/04/2023&4, 5\\ \hline
-7&Desarrollo HW.&60 hs&15/04/2023&31/05/2023&2, 3, 6\\ \hline
-8&Testing HW.&40 hs&15/05/2023&21/06/2023&7\\ \hline
-9&Desarrollo APP.&60 hs&22/06/2023&14/07/2023&2, 6\\ \hline
-10&Documentación de código y diseño.&60 hs&15/07/2023&07/08/2023&2, 9\\ \hline
-11&Desarrollo de Memoria Técnica y Presentación.&140 hs&15/07/2023&30/09/2023&2, 9\\ \hline
+Gantt ID & Tareas ID & Nombre de la Tarea & Duración & Comienzo & Fin & Predecesora \\ \hline
+1&1.1&Documentación Preliminar.&40 hs&02/01/2023&21/02/2023&-\\ \hline
+2&1.2, 1.3, 1.4 y 2.1&Investigación y Planificación.&85 hs&22/01/2023&28/02/2023&1\\ \hline
+3&2.2&Adquisición de insumos.&10 hs&08/02/2023&21/02/2023&2\\ \hline
+4&1.5&Desarrollo FW Maquina de Estados.&30 hs&01/03/2023&07/04/2023&2\\ \hline
+5&1.6&Desarollo FW RTOS.&35 hs&01/03/2023&14/04/2023&2\\ \hline
+6&3.2&Testing FW.&40 hs&01/04/2023&30/04/2023&4, 5\\ \hline
+7&2.3 y 2.4&Desarrollo HW.&60 hs&15/04/2023&31/05/2023&2, 3, 6\\ \hline
+8&3.1&Testing HW.&40 hs&15/05/2023&21/06/2023&7\\ \hline
+9&1.7 y 1.8&Desarrollo APP.&60 hs&22/06/2023&14/07/2023&2, 6\\ \hline
+10&4.1, 4.2 y 4.3&Documentación de código y diseño.&60 hs&15/07/2023&07/08/2023&2, 9\\ \hline
+11&4.4 y 4.5&Desarrollo de Memoria Técnica y Presentación.&140 hs&15/07/2023&30/09/2023&2, 9\\ \hline
 \end{tabularx}%
 \caption{Tareas de gantt.}
 \label{tab:tabGantt}
@@ -576,7 +576,7 @@ La gestión de la calidad es una parte importante del proyecto, es por ello que 
 \item Req \#12: La documentación debe presentarse en formato PDF usando lenguaje Latex.
 \begin{itemize}
 	\item Verificación: se leerá el código fuente.
-	\item Validación: la misma debe ser leído en un lector PDF y disponer del formato correspondiente a la plantilla planteada.
+	\item Validación: la misma debe ser leída en un lector PDF y disponer del formato correspondiente a la plantilla planteada.
 \end{itemize}
 
 \item Req \#13: Debe presentarse un manual de usuario que explique el funcionamiento del producto
